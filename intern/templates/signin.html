@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <style>
+        body {
+            background-image: url(../static/images/ford.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+        
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 450px;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td>Enter user ID:</td>
+                <td><input type="text" name="q"></td>
+            </tr>
+            <tr>
+                <td>Enter password:</td>
+                <td><input type="password" name="g"></td>
+            </tr>
+            <tr>
+                <td>Enter email ID:</td>
+                <td><input type="email" name="d"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Sign up</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet4" href="signin.html">
+    <style>
+        body {
+            background-image: url(../static/images/supra1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        } 
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 450px;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .create-account {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 300px;
+        }
+        
+        .create-account a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .create-account button {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td>Enter email ID:</td>
+                <td><input type="text" name="r"></td>
+            </tr>
+            <tr>
+                <td>Enter password:</td>
+                <td><input type="password" name="f"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Login</button></td>
+            </tr>
+        </table>
+    </form>
+    <div class="create-account">
+        <a href="/signin">
+            <button>Create new account</button>
+        </a>
+    </div>
+</body>
+</html>

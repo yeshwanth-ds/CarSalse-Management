@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search result</title>
+    <link rel="stylesheet" href="main.html">
+    <style>
+        body {
+            background-image: url(../static/images/labborgine.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .card {
+            background-color: lightgray;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            max-width: 500px;
+        }
+        
+        .card strong {
+            font-weight: bold;
+        }
+        
+        .card div {
+            margin-bottom: 10px;
+        }
+        
+        .back-button {
+            margin-top: 20px;
+        }
+        
+        .back-button button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    {% for car in args %}
+    <div class="card">
+        <div><strong>Registration Number:</strong> {{ car[0] }}</div>
+        <div><strong>Car Model:</strong> {{ car[1] }}</div>
+        <div><strong>Owner Name:</strong> {{ car[2] }}</div>
+        <div><strong>Company Name:</strong> {{ car[3] }}</div>
+        <div><strong>Kilometers:</strong> {{ car[4] }}</div>
+        <div><strong>Ownership:</strong> {{ car[5] }}</div>
+        <div><strong>Owner Phone Number:</strong> {{ car[6] }}</div>
+        <div><strong>Expected Price:</strong> {{ car[7] }}</div>
+        <div><strong>Status:</strong> {{ car[8] }}</div>
+        <div><strong>Posted Date:</strong> {{ car[9] }}</div>
+    </div>
+    {% endfor %}
+    <div class="back-button">
+        <a href="/">
+            <button type="button">Back</button>
+        </a>
+    </div>
+</body>
+</html>

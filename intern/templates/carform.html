@@ -1,0 +1,83 @@
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="main.html">
+  <style>
+    img {
+      float: left;
+      margin-right: 100px;
+    }
+
+    input {
+      margin: 10px;
+      border-radius: 5px 8px;
+    }
+
+    button {
+      border-radius: 12px;
+      background-color: blue;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <p>
+    <img src="{{ img }}" alt="noimage" width="50%" height="100%"/>
+  <h1>Car Details</h1>
+  <form method="POST" >
+    <table>
+      <tr>
+        <td>Enter Registration Number:</td>
+        <td><input type="text" name="r"><br></td>
+      </tr>
+      <tr>
+        <td>Car Model :</td>
+        <td><input type="text" name="c"><br></td>
+      </tr>
+      <tr>
+        <td>Owner Name:</td>
+        <td><input type="text" name="o"><br></td>
+      </tr>
+      <tr>
+        <td>Company Name:</td>
+        <td><input type="text" name="cn"><br></td>
+      </tr>
+      <tr>
+        <td>Kilometers :</td>
+        <td><input type="text" name="km"><br></td>
+      </tr>
+      <tr>
+        <td>Ownership :</td>
+        <td><input type="text" name="os"><br></td>
+      </tr>
+      <tr>
+        <td>Owner Mobile Number:</td>
+        <td><input type="text" name="on"><br></td>
+      </tr>
+      <tr>
+        <td>Expected Price :</td>
+        <td><input type="text" name="ep"><br></td>
+      </tr>
+      <tr>
+        <td>Enter Status :</td>
+        <td><input type="text" name="s"><br></td>
+      </tr>
+      <tr>
+        <td>Enter Posted Date :</td>
+        <td><input type="date" name="d"><br></td>
+      </tr>
+
+      <tr>
+        <td><button type="submit">Submit</button></td>
+        <td>
+          <a href="/">
+            <button type="button">Back</button>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

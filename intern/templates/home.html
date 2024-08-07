@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="main.html">
+  <style>
+    body{
+            background-image:url(../static/images/labborgine.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    .card {
+      background-color: lightgray;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: inline-block;
+      max-width: 500px;
+      margin-left: 20px;
+    }
+    </style>
+</head>
+
+<body>
+  <h1>Car data</h1>
+  {% for key, value in args.items() %}
+  <div class="card">
+      <div><strong>Registration Number:</strong> {{ key }}</div>
+      <div><strong>Car Model:</strong> {{ value['Carmodel'] }}</div>
+      <div><strong>Owner Name:</strong> {{ value['Ownername'] }}</div>
+      <div><strong>Company Name:</strong> {{ value['Companyname'] }}</div>
+      <div><strong>Kilometers:</strong> {{ value['Kms'] }}</div>
+      <div><strong>Ownership:</strong> {{ value['ownership'] }}</div>
+      <div><strong>Owner Phone Number:</strong> {{ value['ownermobileno'] }}</div>
+      <div><strong>Expected Price:</strong> {{ value['expectedprice'] }}</div>
+      <div><strong>Status:</strong> {{ value['status'] }}</div>
+      <div><strong>Posted Date:</strong> {{ value['posteddate'] }}</div>
+      <div><strong>Posted email:</strong> {{ value['owneremail'] }}</div>
+  </div>
+  {% endfor %}
+  <br>
+  <a href="/">
+    <button type="button">Back</button>
+  </a>
+  
+</body>
+</html>
